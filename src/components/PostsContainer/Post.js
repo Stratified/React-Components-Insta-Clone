@@ -12,6 +12,8 @@ const Post = (props) => {
 	const [likes, setLikes] = useState(props.post.likes);
 	const like = () => {
 		setLikes(likes + 1);
+		const heart = document.querySelector('like-section-wrapper');
+		heart.style.backgroundColor= "red";
 	};
 
 	return (
